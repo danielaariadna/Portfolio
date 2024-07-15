@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body {
+  background-color: #000; /* Negro */
+  margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+}
+html {
+    scroll-behavior: smooth;
+}
+/* *********************/
+/* seccion I N I C I O */
+/* *********************/
+
+#inicio {
+  
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: #deacd2;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    color: #deacd2;
+}
+
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover {
+    color: #deacd2;
+}
+
+#inicio .contenido header .contenido-header .seleccionado {
+    color: #deacd2;
+}
+
+#inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  
+}
+#container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7); /* Negro con 70% de opacidad */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Añade relleno si es necesario */
+  color: #ffffff; /* Color de texto blanco para mayor visibilidad */
+  width: 1300px; /* Ancho del contenedor */
+    height: 600px; /* Alto del contenedor */
+  
+}
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span {
+    font-size: 50px;
+   color: #deacd2;
+ 
+}
+
+#inicio .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+    background-color: #d982c5;
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color: #7e2e6b;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
+
+}
+
+#container {
+  position: absolute;
+  z-index: -1;  /* Esto coloca la escena detrás de otros elementos */
+  height: auto;
+}
+
+
+#icono-nav {
+    color: #fff;
+    display: none;
+}
+/* *********************/
+/* seccion S O B R E  M I */
+/* *********************/
+  
+#sobremi {
+    max-width: 1500px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row; /* Layout en fila por defecto */
+}
+
+#sobremi .contenedor-foto {
+    max-width: 400px;
+    margin-right: 180px;
+}
+
+#sobremi .contenedor-foto img {
+    padding: 10px;
+    width: 150%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#sobremi .sobremi {
+    margin: 0 40px;
+}
+
+#sobremi .sobremi .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #d982c5;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span {
+    color: #d982c5;
+}
+
+#sobremi .sobremi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #deacd2;
+}
+
+#sobremi .sobremi p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+#sobremi .sobremi a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+    background-color: #d982c5;
+}
+
+#sobremi .sobremi a:hover {
+    background-color: #7e2e6b;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    #sobremi {
+        flex-direction: column; /* Cambia el layout a columna */
+        align-items: center; /* Centra el contenido */
+        text-align: center; /* Centra el texto */
+    }
+
+    #sobremi .contenedor-foto {
+        width: 100%; /* Asegúrate de que el contenedor ocupe el ancho completo */
+        display: flex;
+        justify-content: center; /* Centra el contenido dentro del contenedor */
+        margin: 0; /* Elimina el margen */
+     
+    }
+
+    #sobremi .contenedor-foto img {
+        width: 150%; /* Ajusta este valor según tus necesidades */
+        max-width: none; /* Permite que la imagen supere el tamaño del contenedor padre */
+           margin-bottom: 20px;
+    }
+}
+/* *********************/
+/* seccion S E R V I C I O S*/
+/* *********************/
+
+#servicios {
+    padding: 100px 15px;
+    text-align: center;
+    position: relative;
+     /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+    z-index: 1;
+   /* background: linear-gradient( #997490, rgba(33, 16, 16, 0.8)), url("/img/fondo-skills.jpg");*/
+    
+}
+#video-fondo-servicios {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+#servicios .titulo-seccion {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #deacd2;
+    text-decoration: underline;
+    text-decoration-color: #060606;
+    text-decoration-thickness: 5px;
+}
+#servicios h1 {
+  color: #d982c5;
+  font-size: 20px;
+  margin-top: 12px;
+  font-family: 'Monaco', monospace;
+
+}
+#servicios .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 30px auto;
+}
+
+#servicios .fila .servicio {
+    width: 30%; /* Ajusta el ancho según tus necesidades */
+    height: 350px; /* Ajusta la altura según tus necesidades */
+    background-color: #000000;
+    padding: 30px;
+    margin: 0 15px;
+    border-radius: 5px;
+    transition: .5s;
+
+}
+#servicios .fila .servicio p{
+  color: #eeebf2;
+  
+
+}
+
+
+#servicios .fila .servicio:hover {
+    box-shadow: 9px 9px 14px #C9AAEF, -9px -9px 14px #C9AAEF;
+}
+
+#servicios .fila .servicio .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#servicios .fila .servicio h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #E3BFFE;
+}
+
+#servicios .fila .servicio hr {
+    width: 30%;
+    margin: auto;
+    color: #d982c5;
+    margin-bottom: 25px;
+}
+
+#servicios .fila .servicio ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#servicios .fila .servicio p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+
+/* *********************/
+/* seccion S K I L L S */
+/* *********************/
+
+#skills {
+    text-align: center;
+    position: relative;
+     /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+    z-index: 1;
+   /* background: linear-gradient( #997490, rgba(33, 16, 16, 0.8)), url("/img/fondo-skills.jpg");*/
+    
+}
+#video-fondo-skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+#skills .titulo-seccion {
+    margin-top: 50px;
+    
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #deacd2;
+    text-decoration: underline;
+    text-decoration-color: #060606;
+    text-decoration-thickness: 5px;
+}
+#skills h1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Monaco', monospace;
+
+}
+#skills p {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Monaco', monospace;
+    margin-bottom: 20px;
+  
+  }
+.skill-category {
+    position: relative; /* Asegura que el posicionamiento sea relativo */
+    height:  100%; /* Hace que el contenedor tenga el mismo alto que el video de fondo */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor padre */
+    text-align: center;
+    margin-bottom: 60px; /* Espacio entre cada grupo de habilidades */
+    background-color: rgba(0, 0, 0, 0.7); /* Negro con 50% de opacidad */
+    color: #ffffff;
+  }
+  .skill-category kbd {
+    display: inline-block;
+    margin: 10px; /* Espacio entre cada icono */
+    border: 2px solid #ffffff; /* Define el borde de 2px de ancho y color blanco */
+    padding: 5px 10px; /* Ajusta el relleno interior para separar el contenido del borde */
+    border-radius: 5px; /* Agrega esquinas redondeadas al borde */
+  }
+/* *********************/
+/* seccion P O R T F O L I O */
+/* *********************/
+
+#portfolio {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+    background-color: #000;
+}
+#portfolio h1 {
+    color: #d982c5;
+    font-size: 20px;
+    margin-top: 12px;
+    font-family: 'Monaco', monospace;
+    text-align: center;
+}
+  
+#portfolio .titulo-seccion {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #deacd2;
+    
+    text-decoration-thickness: 5px;
+}
+
+#portfolio .fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#portfolio .fila .proyecto {
+    width: 100%; /* Puedes ajustar este valor según tu diseño */
+    max-width: 600px; /* Aumenta el ancho máximo según sea necesario */
+    border: 1px solid transparent; /* Borde inicial transparente */
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease; /* Transición para el efecto de sombra */
+}
+
+#portfolio .fila .proyecto img {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+    object-fit: cover;
+}
+
+#portfolio .fila .proyecto .info {
+    position: absolute;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #deacd2;
+    width: 100%;
+    padding: 10px;
+    opacity: 0; /* Inicia con opacidad 0 */
+    bottom: -40px; /* Empieza oculto */
+    transition: .5s;
+}
+#portfolio .fila .proyecto .info .icono {
+    width: 34px;
+    height: 34px;
+    margin: 10px;
+}
+
+#portfolio .fila .proyecto:hover {
+    border-color: #d982c5; /* Cambia el color del borde al pasar el cursor */
+    box-shadow:  0px 0px 20px 8px rgba(217, 130, 197, 0.7); /* Efecto de sombra al pasar el cursor */
+}
+
+#portfolio .fila .proyecto:hover .info {
+    opacity: 1; /* Mostrar info al pasar el cursor */
+    bottom: 0;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #000000;
+    position: absolute; /* Cambiado de 'auto' a 'absolute' */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+    padding: 20px;
+    border: 1px solid #d982c5;
+    width: 80%;
+   
+    border-radius: 15px;
+}
+
+
+.close {
+    color: #d982c5;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-content h2 {
+    color: #e0bed7 ; /* Título rosa */
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    
+}
+.modal-content h2 .icono1{
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-left: 10px;
+}
+.modal-content h1 {
+    color: #d982c5 !important; /* Título rosa */
+    padding: 20px !important;
+    font-size: 26px  !important;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.description {
+    margin-left: 30px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    width: 700px;
+    padding: 10px;
+}
+
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tech-icons img {
+    width: 62px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 10px; /* Espacio entre los iconos */
+}
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+.carousel-inner img {
+    min-width: 100%;
+    height: auto;
+    display: none; /* Oculta todas las imágenes por defecto */
+}
+
+.carousel-inner img.active {
+    display: block; /* Muestra solo la imagen activa */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color:rgba(0,0,0,0.8);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: #7e2e6b;
+}
+
+/* *********************/
+/* seccion C O N T A C T O */
+/* *********************/
+
+#contacto {
+    padding: 100px 15px;
+    background-color: #f3f3f3;
+}
+#contacto h1 {
+  color: #000000;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-family: 'Monaco', monospace;
+  text-align: center;
+}
+#contacto .titulo-seccion {
+    margin-bottom: 20px;
+}
+
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#contacto .contenedor-form .mitad input {
+    width: 48%;
+}
+
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+
+#contacto .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #d982c5;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px !important;
+}
+
+#contacto .btn-enviar:hover {
+    background-color: #deacd2;
+    color: #fff;
+}
+/* *********************/
+/* seccion F O O T E R */
+/* *********************/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+/* *********************/
+/* seccion R E S P O N S I V E */
+/* *********************/
+
+@media screen and (max-width: 800px) {
+    .redes {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #icono-nav {
+        display: block;
+    }
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+    /* seccion SOBRE MI */
+    #sobremi {
+        padding: 50px 0;
+        display: block;
+    }
+    #sobremi .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobremi .contenedor-foto img {
+        padding: 8px;
+    }
+    #sobremi .sobremi .titulo-seccion {
+        text-align: center;
+    }
+    #sobremi .sobremi h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    /* seccion MIS SERVICIOS */
+    #servicios {
+        padding: 50px 15px;
+    }
+    #servicios .fila {
+        display: block;
+    }
+    #servicios .fila .servicio {
+        margin: 10px auto;
+    }
+    /* seccion HABLIDADES MI */
+    .contenedor-skills {
+        padding: 50px 20px;
+    }
+    /* seccion PORTFOLIO */
+    #portfolio {
+        padding: 50px 0;
+    }
+    #portfolio .fila {
+        display: block;
+    }
+    #portfolio .fila .proyecto {
+        margin: 10px auto;
+    }
+    /* seccion CONTACTO */
+    #contacto {
+        padding: 50px 15px;
+    }
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    /* Ajustar el contenedor principal en pantallas pequeñas */
+    #inicio .contenido .presentacion #container2 {
+      margin-top: 30px;
+      width: 90%; /* Porcentaje del ancho de la pantalla */
+      padding: 15px; /* Agregar un poco de espacio alrededor del contenedor */
+      height: auto; /* Ajustar la altura automáticamente */
+  }
+  #inicio .contenido .presentacion h2 {
+    font-size: 30px;
+}
+#video-carrusel {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
+
+}
+
