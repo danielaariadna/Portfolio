@@ -1,5 +1,7 @@
-
-
+const projectModals = ['port', 'modal5', 'htb', 'hyh','vet','art','eda','redWan']; // IDs de los modales en orden
+let currentProjectIndex = 0; // Índice del modal actual
+const entryModals = ['ing', 'pila', 'cyber', 'rally','cacic','mip'];
+let currentEntryIndex=0;
 
 //Función que me aplica el estilo a la opciòn seleccionada y quita la previamente seleccionada
 function seleccionar(link) {
@@ -27,11 +29,6 @@ function responsiveMenu() {
     }
 }
 
-//detecto el scrolling para aplicar la animación del la barra de habilidades
-window.onscroll = function() { efectoHabilidades() };
-
-//funcion que aplica la animación de la barra de habilidades
-
 
 /* CARRUSEL DE IMAGENES EN LOGROS PERSONALES */
 
@@ -40,13 +37,24 @@ window.onscroll = function() { efectoHabilidades() };
 function openModal(modalId) {
     document.getElementById(modalId).style.display = "block";
     mostrarPrimeraImagen(modalId); // Mostrar la primera imagen del carrusel al abrir el modal
+    currentProjectIndex = projectModals.indexOf(modalId);
+    currentEntryIndex=entryModals.indexOf(modalId);
 }
 
 function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none";
     resetearCarrusel(modalId); // Reiniciar el carrusel al cerrar el modal
 }
-
+function cambiarProyect(n) {
+    closeModal(projectModals[currentProjectIndex]);
+    currentProjectIndex = (currentProjectIndex + n + projectModals.length) % projectModals.length;
+    openModal(projectModals[currentProjectIndex]);
+}
+function cambiarEntrada(n) {
+    closeModal(entryModals[currentEntryIndex]);
+    currentEntryIndex = (currentEntryIndex + n + entryModals.length) % entryModals.length;
+    openModal(entryModals[currentEntryIndex]);
+}
 function mostrarPrimeraImagen(modalId) {
     let carousel = document.querySelector(`#${modalId} .carousel-inner`);
     let primerImagen = carousel.querySelector('img');

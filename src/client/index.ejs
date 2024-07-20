@@ -60,7 +60,7 @@
     </section>
 
    <!-- SECCION S O B R E M I -->
-        <section id="sobremi">
+    <section id="sobremi">
             <div class="contenedor-foto">
                 <img src="img/perfil.jpg" alt="">
             </div>
@@ -72,10 +72,10 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natusLorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natusLorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natusLorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natusLorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natus</p>
                 <a href="img/Morales_Daniela_CV.pdf" target="_blank">Abrir CV</a>
             </div>
-        </section>
+    </section>
 
    <!-- SECCION H A B I L I D A D E S -->
-   <section id="skills">
+    <section id="skills">
     <video autoplay muted loop id="video-fondo-skills">
         <source src="img/fondo2.mp4" type="video/mp4">
         <!-- Agrega más sources para formatos diferentes si es necesario -->
@@ -110,16 +110,18 @@
             <br>
             <img width="50px" src="https://github.com/tandpfun/skill-icons/raw/main/icons/MySQL-Dark.svg" />
           </kbd>
-        <kbd>
+         <kbd>
             <kbd><h1>Networks🌱</h1></kbd>
             <br>
             <br>
           
-                PROTOCOLOS <br>
-                DISPOSITIVOS <br>
-                LANS/WLANS/VLANS<br>
+            <ul>
+                    <li>Protocolos </li> 
+                    <li>Dispositivos </li> 
+                    <li>LANS/WLANS/VLANS</li> 
+            </ul>
           
-          </kbd>
+         </kbd>
           <br>
         <h2>Pero también esoy familiarizada con:</h2>
 
@@ -169,7 +171,7 @@
           <p>🔥: Mi fuerte - 🌱: Básico</p>
     </div>
     
-</section>
+    </section>
     <!-- SECCION PORTAFOLIO -->
     <section id="portfolio">
         <h3 class="titulo-seccion">˖⁺‧₊˚♡˚₊‧⁺˖ Mis Proyectos ˖⁺‧₊˚♡˚₊‧⁺˖</h3>
@@ -258,7 +260,7 @@
                     
                 </div>
             </div>
-            <div class="proyecto" onclick="openModal('redWan')">
+            <div class="proyecto" >
                 <div class="overlay"></div>
                 <img src="img/redesWan.png" alt="">
                 <div class="info">
@@ -271,12 +273,7 @@
 
 
 
-
-
-
-
-
-
+<!-- Descripcion de proyectos -->
         <div id="hyh" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('hyh')">&times;</span>
@@ -311,7 +308,7 @@
                               </ul>
                         </p>
                         <div class="button-container">
-                            <a href="https://www.youtube.com/watch?v=k6v5jQERdUk" target="_blank">
+                            <a href="https://github.com/danielaariadna/HammingHuffman" target="_blank">
                                 <img width="40px" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Github-Dark.svg" alt="Google Drive">
                                 Repositorio
                             </a>
@@ -323,6 +320,8 @@
                     </div>
                 </div>
             </div>
+            <button id="prevProject" class="nav-button" onclick="cambiarProyect(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarProyect(1)">&#10095;</button>
         </div>
         <div id="vet" class="modal">
             <div class="modal-content">
@@ -346,7 +345,7 @@
                         <h1>DESCRIPCIÓN</h1>
                         <p>Página para gestión de una Veterinaria/Centro de adopción hecha para la materia Tópicos Avanzados de Tecnologías Web con MVC Codeigniter. La página NO es responsive, es un proyecto para backend y en el momento que hice la página aún no tenía muchas herramientas para el front, por lo que podrás encontrar muchos errores en esa parte. Puede llegar a ser útil para algún desarrollador/a frontend que quiera re-hacerlo, el backend funciona perfecto y dentro está el volcado sql.</p>
                         <div class="button-container">
-                            <a href="https://www.youtube.com/watch?v=k6v5jQERdUk" target="_blank">
+                            <a href="https://github.com/danielaariadna/veterinaria" target="_blank">
                                 <img width="40px" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Github-Dark.svg" alt="Google Drive">
                                 Repositorio
                             </a>
@@ -357,11 +356,13 @@
                             <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/HTML.svg" alt="Icono" class="icono">
                             <!-- Añadir más iconos aquí -->
                         </div>
+                        
                     </div>
                 </div>
             </div>
+            <button id="prevProject" class="nav-button" onclick="cambiarProyect(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarProyect(1)">&#10095;</button>
         </div>
-
         <div id="eda" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('eda')">&times;</span>
@@ -389,7 +390,7 @@
                         * Créditos a mi compañero de grupo Francisco Sayago, quién realizó el header de la Lista Invertida.</p>
                         
                         <div class="button-container">
-                            <a href="https://www.youtube.com/watch?v=k6v5jQERdUk" target="_blank">
+                            <a href="https://github.com/danielaariadna/P2_GRUPO6" target="_blank">
                                 <img width="40px" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Github-Dark.svg" alt="Google Drive">
                                 Repositorio
                             </a>
@@ -400,6 +401,8 @@
                     </div>
                 </div>
             </div>
+            <button id="prevProject" class="nav-button" onclick="cambiarProyect(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarProyect(1)">&#10095;</button>
         </div>
         <div id="art" class="modal">
             <div class="modal-content">
@@ -424,7 +427,7 @@
                         </ul>
                         </p>
                         <div class="button-container">
-                            <a href="https://www.youtube.com/watch?v=k6v5jQERdUk" target="_blank">
+                            <a href="https://github.com/danielaariadna/ArtGallery" target="_blank">
                                 <img width="40px" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Github-Dark.svg" alt="Google Drive">
                                 Repositorio
                             </a>
@@ -436,6 +439,8 @@
                     </div>
                 </div>
             </div>
+            <button id="prevProject" class="nav-button" onclick="cambiarProyect(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarProyect(1)">&#10095;</button>
         </div>
         <div id="modal5" class="modal">
             <div class="modal-content">
@@ -472,11 +477,13 @@
                     </div>
                 </div>
             </div>
+            <button id="prevProject" class="nav-button" onclick="cambiarProyect(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarProyect(1)">&#10095;</button>
         </div>
         <div id="port" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('port')">&times;</span>
-                <h2>DISEÑO DE RED </h2>
+                <h2>MI PÁGINA WEB </h2>
                 <div class="modal-body">
                     <div class="carousel">
                         <div class="carousel-inner">
@@ -493,17 +500,23 @@
                             💗 La animación del inicio la hice con Three.js sólo por experimentar<br>
                         </p>
                         <div class="button-container">
-                            <a href="https://www.youtube.com/watch?v=k6v5jQERdUk" target="_blank">
+                            <a href="https://github.com/danielaariadna/Portfolio" target="_blank">
                                 <img width="40px" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Github-Dark.svg" alt="Google Drive">
                                 Repositorio
                             </a>
                         </div>
                         <div class="tech-icons">
-                            
+                            <br>
+                            <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/NodeJS-Dark.svg" alt="Icono" class="icono">
+                            <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/JavaScript.svg" alt="Icono" class="icono">
+                             <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/CSS.svg" alt="Icono" class="icono">
+                            <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/HTML.svg" alt="Icono" class="icono">
                         </div>
                     </div>
                 </div>
             </div>
+            <button id="prevProject" class="nav-button" onclick="cambiarProyect(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarProyect(1)">&#10095;</button>
         </div>
         <div id="redWan" class="modal">
             <div class="modal-content">
@@ -535,7 +548,7 @@
                             
                         </p>
                         <div class="button-container">
-                            <a href="https://www.youtube.com/watch?v=k6v5jQERdUk" target="_blank">
+                            <a href="https://drive.google.com/drive/folders/11f01kec1IqYziuiMZIxEecpqR4udwgmy?usp=drive_link" target="_blank">
                                 <img width="38px" src="img/google-drive.png" alt="Google Drive">
                                 Drive
                             </a>
@@ -546,6 +559,8 @@
                     </div>
                 </div>
             </div>
+            <button id="prevProject" class="nav-button" onclick="cambiarProyect(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarProyect(1)">&#10095;</button>
         </div>
         <div id="htb" class="modal">
             <div class="modal-content">
@@ -574,13 +589,13 @@
                         <h1>DESCRIPCIÓN</h1>
                         <p>Un poco de la documentación que realizo y scripts que utilizo cuando practico pentesting en Hack The Box u otras plataformas.  </p>
                         <div class="button-container">
-                            <a href="https://www.youtube.com/watch?v=k6v5jQERdUk" target="_blank">
-                                <img width="38px" src="img/google-drive.png" alt="Google Drive">
+                            <a href="https://drive.google.com/drive/folders/1N3KGM6_nv08cB3XxjREk05kxk-Gu-k0K?usp=sharing" target="_blank">
+                                <img width="40px" src="img/google-drive.png" alt="Google Drive">
                                 Drive
                             </a>
                         </div>
                         <div class="button-container">
-                            <a href="https://www.youtube.com/watch?v=k6v5jQERdUk" target="_blank">
+                            <a href="https://drive.google.com/drive/folders/1N3KGM6_nv08cB3XxjREk05kxk-Gu-k0K?usp=sharing" target="_blank">
                                 <img width="40px" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Github-Dark.svg" alt="Google Drive">
                                 Repositorio
                             </a>
@@ -592,12 +607,14 @@
                     </div>
                 </div>
             </div>
+            <button id="prevProject" class="nav-button" onclick="cambiarProyect(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarProyect(1)">&#10095;</button>
         </div>
 
    
     </section>
 
-    <!-- SECCION S E R V I C I O S -->
+    <!-- SECCION S E R V I C I O S (Inicialmente iba a ofrecer mis servicios en esta seccion pero se convertió en una especie de vlog(?))-->
     <section id="servicios">
         <video autoplay muted loop id="video-fondo-servicios">
             <source src="img/fondo.mp4" type="video/mp4">
@@ -665,7 +682,7 @@
 
         
     </section>
-
+    <!-- INFO -->
     <div id="mip" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('mip')">&times;</span>
@@ -684,11 +701,16 @@
                     <p> "Mi Primer Empleo" fue una pasantía de Amcor Flexibles SL, creada para brindarle a los/las hijos/as de sus trabajadores la posibilidad de tener su primera experiencia laboral. Si bien no fué realmente mi primer trabajo, decidí participar por la experiencia, ya que ninguno de los sectores disponibles tenían que ver con la carrera que estudio.
                         Estuve en el sector de Laboratorio, donde aprendí a elaborar informes, inventarios, normas de seguridad e higiene, testeos de calidad, entre otras cosas. Lo que más aprendí de esta empresa fue sobre la prevención de riesgos, la seguridad y la importancia de cumplir los protocolos, el método que utilizaban redujo drásticamente los accidentes laborales. Agradezco haber participado y haber adquirido tantos conocimientos, sin dudas mi día preferido de los 2 meses que estuve, fué el que pasé en el Área de Informática, luego de que pedí que me dieran la oportunidad. Ver de cerca como mantenían los servidores y cómo funcionaba el equipo IT, me inspiró a esforzarme más y más para llegar a esa meta.
                         </p>
-                        <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px"> <b>> Dani.~</b>
+                        <div class="right-align">
+                            <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px">
+                            <b>> Dani.~</b>
+                        </div>
                  
                 </div>
             </div>
         </div>
+            <button id="prevProject" class="nav-button" onclick="cambiarEntrada(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarEntrada(1)">&#10095;</button>
     </div>
     <div id="rally" class="modal">
         <div class="modal-content">
@@ -708,16 +730,23 @@
                        
                 </div>
                 <div class="description">
-                    <p>Es una competencia que dura 28 horas seguidas, donde compiten equipos de las universidades de toda Latinoamérica para dar solución a diferentes problemáticas. En esta ocasión, nos tocó la “revalorización de residuos cítricos”. Nuestra propuesta fue la creación de bioplásticos a partir de residuos de cáscaras de naranja para producir yeso biodegradable. Quedamos en primer lugar a nivel SEDE en nuestra facultad, junto al equipo "Citroinnovar". ¿Qué tiene esto que ver con la informática? Nada, pero una vez más lo hice por la experiencia y porque pasar 28 horas sin dormir es algo que se me da muy bien. Mi aporte estuvo en la realización del contenido multimedia y en la recolección de información.<br></p>
-                        <p>Esta competencia me sirvió para trabajar en un equipo de 10 personas, conformado por estudiantes de facultades distintas: Matemática, Electrónica, Salud, Bioquímica e Informática, y aun así, que cada uno aporte su grano de arena. Igualmente, me gustaría participar en la próxima edición con un proyecto relacionado al desarrollo de software.<br>
-                            
-                            <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px"><b>> Dani.~</b>
+                    <p>Es una competencia que dura 28 horas seguidas, donde compiten equipos de las universidades de toda Latinoamérica para dar solución a diferentes problemáticas. En esta ocasión, nos tocó la “revalorización de residuos cítricos”. Nuestra propuesta fue la creación de bioplásticos a partir de residuos de cáscaras de naranja para producir yeso biodegradable. Quedamos en primer lugar a nivel SEDE en nuestra facultad, junto al equipo "Citroinnovar". ¿Qué tiene esto que ver con la informática? Nada, pero una vez más lo hice por la experiencia y porque pasar 28 horas sin dormir es algo que se me da muy bien. Mi aporte estuvo en la realización del contenido multimedia y en la recolección de información.<br>Me gustaría participar en la próxima edición con un proyecto relacionado al desarrollo de software.</p>                       
                         
-                        </p>
-                 
+                        <div class="right-align">
+                            <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px">
+                            <b>> Dani.~</b>
+                        </div>
+                        <div class="button-container">
+                            <a href="https://www.youtube.com/watch?v=k6v5jQERdUk" target="_blank">
+                                <img width="40px" src="img/youtube.png" alt="Google Drive">
+                                Video
+                            </a>
+                        </div>
                 </div>
             </div>
         </div>
+        <button id="prevProject" class="nav-button" onclick="cambiarEntrada(-1)" >&#10094;</button>
+        <button id="nextProject" class="nav-button" onclick="cambiarEntrada(1)">&#10095;</button>
     </div>
     <div id="ing" class="modal">
         <div class="modal-content">
@@ -741,15 +770,25 @@
                 </div>
                 <div class="description">
                     <p>Aprovecho este espacio para adjuntar mi drive de la carrera. En cada carpeta de cada materia hay proyectos, resolución de trabajos prácticos, parciales, finales, resúmenes, libros, etc. <br>Cabe destacar que el drive original lo comenzó otro alumno más avanzado. Fue tanto lo que me sirvió su contenido a mí y a otros compañeros, que decidí hacer el mío para seguir aportando, ya que él no continuó con sus estudios y el drive estaba incompleto. Como este drive lo comencé en 2° año, es posible que las materias de la carpeta de 1° no tengan mucho contenido. También quiero aclarar que parte de los archivos antes mencionados son míos, otros son del drive original, y otros son aportes nuevos. Siempre doy crédito a su autor, pero en caso de que se me haya pasado algún archivo, puedes contactarme para corregir la situación.</p>
-                        
-                    <img width="50px" src="img/google-drive.png" /><a href="https://www.youtube.com/watch?v=k6v5jQERdUk" target="_blank">Ir al drive</a><br>
-                    <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px"><b>> Dani.~</b>
+                    <div class="right-align">
+                        <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px">
+                        <b>> Dani.~</b>
+                    </div>
+                    <div class="button-container">
+                        <a href="https://drive.google.com/drive/folders/1WKiDUAtuCJ3InB5XWqAm-3Q3qRC2yKE7?usp=drive_link" target="_blank">
+                            <img width="40px" src="img/google-drive.png" alt="Google Drive">
+                            Drive
+                        </a>
+                    </div>
+            
                         
                       
                  
                 </div>
             </div>
         </div>
+        <button id="prevProject" class="nav-button" onclick="cambiarEntrada(-1)" >&#10094;</button>
+        <button id="nextProject" class="nav-button" onclick="cambiarEntrada(1)">&#10095;</button>
     </div>
     <div id="cacic" class="modal">
         <div class="modal-content">
@@ -770,15 +809,16 @@
                 </div>
                 <div class="description">
                     <p>Este congreso se realiza todos los años en diferentes partes del país, generalmente durante 4 días en el mes de octubre. Además de los workshops, ofrece una escuela de informática con 4 cursos, los cuales constan de 4 clases y se dictan durante los 4 días del congreso. <br>Tuve la oportunidad de organizar este viaje junto a algunos de mis compañeros (a veces con más y a veces con menos participación), y como fruto de esta organización pudimos invitar a otros alumnos del departamento de informática para que pudiesen vivir esta experiencia con nosotros. Nuestro agradecimiento es infinito, ya que en ambas oportunidades el CACIC nos brindó alojamiento y comida. Por otra parte, el transporte fue gestionado por nuestra universidad. Lo único que quedaba cubrir eran los gastos de matriculación en la escuela de informática, para lo cual realizamos una rifa con el centro de estudiantes y pudimos cubrir cada una de las inscripciones. Es una hermosa experiencia, no solo por los conocimientos que nos traemos del congreso, sino por todos los amigos y contactos que hacemos con alumnos de universidades de todo el país.</p>
-                        
-                    <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px"><b>> Dani.~</b>
-                    
-                        
-                     </p>
+                    <div class="right-align">
+                        <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px">
+                        <b>> Dani.~</b>
+                    </div>
                  
                 </div>
             </div>
         </div>
+        <button id="prevProject" class="nav-button" onclick="cambiarEntrada(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarEntrada(1)">&#10095;</button>
     </div>
     <div id="pila" class="modal">
         <div class="modal-content">
@@ -796,15 +836,21 @@
                 </div>
                 <div class="description">
                     <p>Estoy participando en el Programa de Intercambio Académico Latinoamericano en la modalidad virtual. Elegí cursar 2 materias en la Universidad Militar Nueva Granada, Colombia, en la facultad de estudios a distancia. Que me aceptaran en esta beca fue un milagro para mí. Primero, porque amo las nuevas experiencias y conocer gente; y segundo, porque voy a poder adelantar un cuatrimestre. Estoy muy feliz aunque aún no comienzo a cursar. Iré dejando fotos y actualizando a medida que pase el cuatrimestre.</p>
-                        
-                    <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px"><b>> Dani.~</b>
-                    
-                        
-                     </p>
-                 
+                    <div class="right-align">
+                        <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px">
+                        <b>> Dani.~</b>
+                    </div>
+                    <div class="button-container">
+                        <a href="https://www.programapila.lat" target="_blank">
+                            <img width="40px" src="img/pag.png" alt="Google Drive">
+                            Programa Pila
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <button id="prevProject" class="nav-button" onclick="cambiarEntrada(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarEntrada(1)">&#10095;</button>
     </div>
     <div id="cyber" class="modal">
         <div class="modal-content">
@@ -826,15 +872,22 @@
                         <li>SC-900 - Microsoft</li>
                         <li>Hacking Ético - Ademass</li>
                         <li>Notas de mis resoluciones en Hack The Box</li></p>
-                    <img width="50px" src="img/google-drive.png" /><a href="https://www.youtube.com/watch?v=k6v5jQERdUk" target="_blank">Ir al drive</a><br>
-                    <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px"><b>> Dani.~</b>
-                    
-                        
-                     </p>
+                        <div class="right-align">
+                            <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="60px">
+                            <b>> Dani.~</b>
+                        </div>
+                        <div class="button-container">
+                            <a href="https://drive.google.com/drive/folders/1YUSjLUsX8QKQDWnbj-8lBXFyIAdPc6dH?usp=sharing" target="_blank">
+                                <img width="40px" src="img/google-drive.png" alt="Google Drive">
+                                Drive
+                            </a>
+                        </div>
                  
                 </div>
             </div>
         </div>
+        <button id="prevProject" class="nav-button" onclick="cambiarEntrada(-1)" >&#10094;</button>
+            <button id="nextProject" class="nav-button" onclick="cambiarEntrada(1)">&#10095;</button>
     </div>
     <!-- SECCTION C O N T A C T O -->
     <section id="contacto">

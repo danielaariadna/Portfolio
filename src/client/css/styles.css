@@ -445,6 +445,12 @@ html {
     border-radius: 5px; /* Agrega esquinas redondeadas al borde */
     
   }
+  ul {
+    list-style-position: inside; /* Asegura que los círculos no sobresalgan */
+    padding-left: 0; /* Remueve el padding izquierdo por defecto */
+    margin-left: 3px; /* Remueve el margen izquierdo por defecto */
+    text-align: left;
+}
 /* *********************/
 /* seccion P O R T F O L I O */
 /* *********************/
@@ -596,6 +602,13 @@ html {
     width: 700px;
     padding: 10px;
 }
+.right-align {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 17px;
+}
+
 
 
 .tech-icons {
@@ -675,6 +688,7 @@ html {
     align-items: center;
     justify-content: center;
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
@@ -691,7 +705,31 @@ html {
 .button-container:hover {
     background-color: #70285f;
 }
-
+/* Estilos para los botones de navegación */
+.nav-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed; /* Fijo en la pantalla */
+    top: 50%;
+    background-color:rgba(236, 149, 219, 0.5);
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 24px;
+  }
+  
+  #prevProject {
+    left: 80px; /* Ajusta la distancia desde el borde izquierdo */
+  }
+  
+  #nextProject {
+    right: 80px; /* Ajusta la distancia desde el borde derecho */
+  }
+  .nav-button:hover {
+    background-color: #70285f;
+}
 /* *********************/
 /* seccion C O N T A C T O */
 /* *********************/
