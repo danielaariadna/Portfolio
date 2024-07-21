@@ -163,10 +163,21 @@ html {
     color: #fff;
     display: none;
 }
+@media (max-width: 768px) {
+    #inicio .contenido .presentacion h2 span {
+        font-size: 40px;
+       color: #deacd2;
+     
+    }
+}
 /* *********************/
 /* seccion S O B R E  M I */
 /* *********************/
   
+/* *********************/
+/* seccion S O B R E  M I */
+/* *********************/
+
 #sobremi {
     max-width: 1500px;
     margin: auto;
@@ -177,18 +188,21 @@ html {
 }
 
 #sobremi .contenedor-foto {
-    max-width: 400px;
-    margin-right: 180px;
+    flex: 1; /* Permite que el contenedor de la imagen ocupe más espacio */
+    max-width: 300px;
+    padding: 5px;
+    margin-right: 30px;
 }
 
 #sobremi .contenedor-foto img {
-    padding: 10px;
-    width: 150%;
+    width: 100%; /* Ajusta el tamaño de la imagen para que ocupe el ancho del contenedor */
     border-radius: 20px;
     background-color: #f3f3f3;
+    border: 5px solid #ffffff;
 }
 
 #sobremi .sobremi {
+    flex: 2; /* Permite que el contenedor de la descripción ocupe más espacio */
     margin: 0 40px;
 }
 
@@ -221,23 +235,35 @@ html {
 }
 
 #sobremi .sobremi p {
-    font-size: 14px;
+    font-size: 17px;
     line-height: 25px;
     color: #ffffff;
     margin-bottom: 12px;
 }
+#sobremi .sobremi ul {
+    padding-left: 10px; /* Ajusta el padding del contenedor de la lista */
+    list-style: disc inside; /* Cambia el estilo de la lista y coloca los bullets dentro */
+}
 
+#sobremi .sobremi li {
+    font-size: 16px; /* Ajusta el tamaño de la fuente de los elementos de la lista */
+    line-height: 20px; /* Ajusta la altura de la línea para más espacio entre líneas */
+    margin-bottom: 10px; /* Agrega espacio entre los elementos de la lista */
+    color: #ffffff; /* Ajusta el color de la fuente de los elementos de la lista */
+}
 #sobremi .sobremi a {
     display: inline-block;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     border-radius: 30px;
     border: 1px solid #ffffff;
     padding: 10px 20px;
     margin-top: 30px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     transition: .5s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     background-color: #d982c5;
 }
 
@@ -246,6 +272,31 @@ html {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
 }
 
+/* Media query para pantallas medianas (iPad Pro y similares) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #sobremi {
+        flex-direction: column; /* Cambia el layout a columna para pantallas medianas */
+        align-items: center; /* Centra el contenido */
+        text-align: center; /* Centra el texto */
+    }
+
+    #sobremi .contenedor-foto {
+        width: 100%; /* Ajusta el ancho del contenedor de la imagen */
+        margin: 0 auto; /* Centra el contenedor de la imagen */
+    }
+    
+
+    #sobremi .contenedor-foto img {
+        width: 100%; /* Ajusta el tamaño de la imagen para que ocupe el ancho del contenedor */
+        max-width: 600px; /* Ajusta el tamaño máximo de la imagen */
+        margin-bottom: 20px;
+    }
+
+    #sobremi .sobremi {
+        margin: 0; /* Elimina el margen lateral en pantallas medianas */
+        padding: 20px; /* Agrega padding para separación interna */
+    }
+}
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     #sobremi {
@@ -265,9 +316,12 @@ html {
     #sobremi .contenedor-foto img {
         width: 150%; /* Ajusta este valor según tus necesidades */
         max-width: none; /* Permite que la imagen supere el tamaño del contenedor padre */
-           margin-bottom: 20px;
+        margin-bottom: 20px;
     }
 }
+
+
+
 /* *********************/
 /* seccion S E R V I C I O S*/
 /* *********************/
@@ -276,12 +330,10 @@ html {
     padding: 100px 15px;
     text-align: center;
     position: relative;
-     /* Ajusta la altura según tus necesidades */
     overflow: hidden;
     z-index: 1;
-   /* background: linear-gradient( #997490, rgba(33, 16, 16, 0.8)), url("/img/fondo-skills.jpg");*/
-    
 }
+
 #video-fondo-servicios {
     position: absolute;
     top: 0;
@@ -291,6 +343,7 @@ html {
     object-fit: cover;
     z-index: -1; 
 }
+
 #servicios .titulo-seccion {
     text-align: center;
     font-size: 26px;
@@ -298,15 +351,17 @@ html {
     color: #deacd2;
     text-decoration-thickness: 5px;
 }
-#servicios h1 {
-  color: #d982c5;
-  font-size: 20px;
-  margin-top: 12px;
-  font-family: 'Monaco', monospace;
 
+#servicios h1 {
+    color: #d982c5;
+    font-size: 20px;
+    margin-top: 12px;
+    font-family: 'Monaco', monospace;
 }
+
 #servicios .fila {
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
     justify-content: space-between;
     max-width: 1150px;
     margin: 30px auto;
@@ -320,19 +375,18 @@ html {
     margin: 0 15px;
     border-radius: 5px;
     transition: .5s;
-
 }
+
 #servicios .fila .servicio p{
-  color: #eeebf2;
-
+    color: #eeebf2;
 }
+
 #servicios .fila .servicio img {
-    max-width: 60%; /* Ajusta el ancho de la imagen para que ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina el espacio debajo de la imagen */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
-
 
 #servicios .fila .servicio:hover {
     box-shadow: 9px 9px 14px #C9AAEF, -9px -9px 14px #C9AAEF;
@@ -373,6 +427,30 @@ html {
     line-height: 22px;
 }
 
+/* Media queries para ajustar el diseño en pantallas pequeñas */
+
+@media (max-width: 768px) {
+    #servicios .fila .servicio {
+        width: 45%; /* Cambia el ancho a un 45% en pantallas medianas */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Ajusta el margen para evitar espacios grandes */
+    }
+}
+
+@media (max-width: 480px) {
+    #servicios .fila .servicio {
+        width: 90%; /* Cambia el ancho a un 90% en pantallas pequeñas */
+        margin: 10px auto; /* Centra los elementos y ajusta el margen */
+    }
+
+    #servicios .titulo-seccion {
+        font-size: 20px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+
+    #servicios h1 {
+        font-size: 18px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+}
 
 
 /* *********************/
@@ -382,12 +460,10 @@ html {
 #skills {
     text-align: center;
     position: relative;
-     /* Ajusta la altura según tus necesidades */
     overflow: hidden;
     z-index: 1;
-   /* background: linear-gradient( #997490, rgba(33, 16, 16, 0.8)), url("/img/fondo-skills.jpg");*/
-    
 }
+
 #video-fondo-skills {
     position: absolute;
     top: 0;
@@ -397,8 +473,9 @@ html {
     object-fit: cover;
     z-index: -1; 
 }
+
 #skills .titulo-seccion {
-    margin-top: 60px;
+    margin-top: 10px;
     text-align: center;
     font-size: 26px;
     text-transform: uppercase;
@@ -407,50 +484,111 @@ html {
     text-decoration-color: #060606;
     text-decoration-thickness: 5px;
 }
-#skills h1 {
-  color: #ffffff;
-  font-size: 20px;
-  font-family: 'Monaco', monospace;
 
-}
-#skills h2 {
+#skills h1, #skills h2, #skills p {
     color: #ffffff;
-    font-size: 25px;
     font-family: 'Monaco', monospace;
+}
+
+#skills h1 {
+    font-size: 20px;
+}
+
+#skills h2 {
+    font-size: 25px;
     margin-top: 30px;
     margin-bottom: 10px;
-  
-  }
+}
+
 #skills p {
-    color: #ffffff;
     font-size: 15px;
-    font-family: 'Monaco', monospace;
     margin-bottom: 20px;
-  
-  }
+}
+
 .skill-category {
-    position: relative; /* Asegura que el posicionamiento sea relativo */
-    height:  100%; /* Hace que el contenedor tenga el mismo alto que el video de fondo */
-    width: 100%; /* Asegura que ocupe todo el ancho del contenedor padre */
+    position: relative;
+    width: 100%;
     text-align: center;
-    margin-bottom: 60px; /* Espacio entre cada grupo de habilidades */
-    background-color: rgba(0, 0, 0, 0.7); /* Negro con 50% de opacidad */
+    margin-bottom: 60px;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
     color: #ffffff;
-  }
-  .skill-category kbd {
+    padding: 20px;
+}
+
+.skill-category kbd {
     display: inline-block;
-    margin: 10px; /* Espacio entre cada icono */
-    border: 2px solid #ffffff; /* Define el borde de 2px de ancho y color blanco */
-    padding: 5px 10px; /* Ajusta el relleno interior para separar el contenido del borde */
-    border-radius: 5px; /* Agrega esquinas redondeadas al borde */
-    
-  }
-  ul {
-    list-style-position: inside; /* Asegura que los círculos no sobresalgan */
-    padding-left: 0; /* Remueve el padding izquierdo por defecto */
-    margin-left: 3px; /* Remueve el margen izquierdo por defecto */
+    margin: 10px;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
     text-align: left;
 }
+
+/* Media queries para ajustar el diseño en pantallas pequeñas */
+
+@media (max-width: 768px) {
+    .skill-category kbd {
+        margin: 5px; /* Reduce el margen para pantallas más pequeñas */
+        padding: 5px; /* Ajusta el padding */
+    }
+
+    #skills h1 {
+        font-size: 18px; /* Reduce el tamaño del texto en pantallas medianas */
+    }
+
+    #skills h2 {
+        font-size: 22px; /* Reduce el tamaño del texto en pantallas medianas */
+    }
+
+    #skills p {
+        font-size: 14px; /* Reduce el tamaño del texto en pantallas medianas */
+    }
+
+    .skill-category ul {
+        font-size: 14px; /* Ajusta el tamaño del texto de la lista */
+    }
+}
+
+@media (max-width: 480px) {
+   .skill-category {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+        padding: 10px;
+        justify-content: center; /* Centra los elementos horizontalmente */
+        align-items: center;
+    }
+
+    .skill-category kbd {
+        display: block;
+        margin: 5px;
+        /* Ajusta el ancho teniendo en cuenta el margen */
+    }
+
+    #skills h1 {
+        font-size: 16px; /* Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+    }
+
+    #skills h2 {
+        font-size: 20px; /* Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+    }
+
+    #skills p {
+        font-size: 10px; /* Reduce aún más el tamaño del texto en pantallas muy pequeñas */
+        margin-top: auto!important;
+    }
+
+    .skill-category ul {
+        font-size: 12px; /* Ajusta el tamaño del texto de la lista para pantallas pequeñas */
+    }
+}
+
 /* *********************/
 /* seccion P O R T F O L I O */
 /* *********************/
@@ -710,11 +848,12 @@ html {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     position: fixed; /* Fijo en la pantalla */
     top: 50%;
-    background-color:rgba(236, 149, 219, 0.5);
+    border-radius: 5px;
+    background-color:rgba(236, 149, 219, 0.4);
     transform: translateY(-50%);
     z-index: 10;
     font-size: 24px;
@@ -730,77 +869,182 @@ html {
   .nav-button:hover {
     background-color: #70285f;
 }
+
+
+@media (max-width: 768px) {
+    #portfolio .fila .servicio {
+        width: 90%; /* Cambia el ancho a un 90% en pantallas pequeñas */
+        margin: 10px auto; /* Centra los elementos y ajusta el margen */
+    }
+
+    #portfolio .titulo-seccion {
+        font-size: 20px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+
+    #portfolio h1 {
+        font-size: 18px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+    .modal-content {
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column; /* Cambia a columna para apilar el contenido verticalmente */
+    }
+
+    .modal-body {
+        display: flex;
+        flex-direction: column; /* Cambia a columna para apilar el contenido verticalmente */
+    }
+
+    .carousel {
+        order: 1; /* Asegúrate de que el carrusel se muestre arriba */
+        margin-bottom: 20px; /* Ajusta el margen inferior si es necesario */
+    }
+    .close {
+        position: absolute; /* Asegura que el botón esté en posición absoluta dentro de .modal-content */
+        right: 10px; /* Ajusta el espacio desde el borde derecho según sea necesario */
+        top: 10px; /* Ajusta el espacio desde el borde superior según sea necesario */
+        font-size: 24px; /* Ajusta el tamaño del icono si es necesario */
+    }
+    .description {
+        order: 2; /* Asegúrate de que la descripción se muestre abajo */
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .modal-content h2 {
+        font-size: 26px;
+        padding: 20px;
+        text-align: center;
+        
+    }
+    .modal-content h1 {
+        padding: 2px !important;
+        font-size: 16px  !important;
+    }
+    .nav-button {
+        
+        padding: 12px;
+        z-index: 10;
+        font-size: 14px;
+      }
+      
+      #prevProject {
+        left: 0px; /* Ajusta la distancia desde el borde izquierdo */
+      }
+      
+      #nextProject {
+        right: 0px; /* Ajusta la distancia desde el borde derecho */
+      }
+      .prev, .next {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .carousel {
+        margin-bottom: 10px;
+    }
+      
+}
+
 /* *********************/
 /* seccion C O N T A C T O */
 /* *********************/
 
-#contacto {
-    padding: 100px 15px;
+#contact {
+    padding: 80px 15px;
     background-color: #000000;
 }
-#contacto h1 {
-  color: #000000;
-  font-size: 16px;
+#contact h1 {
+  color: #e0bed7;
+  font-size: 20px;
   margin-top: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   font-family: 'Monaco', monospace;
   text-align: center;
 }
-#contacto .titulo-seccion {
-    margin-bottom: 20px;
-}
 
-#contacto .contenedor-form {
-    max-width: 1100px;
-    margin: auto;
-}
-
-#contacto .contenedor-form .fila {
-    margin-bottom: 15px;
-}
-
-#contacto .contenedor-form .mitad {
-    display: flex;
-    justify-content: space-between;
-}
-
-#contacto .contenedor-form input,
-#contacto .contenedor-form textarea {
-    padding: 20px;
-    border-radius: 20px;
-    border: none;
-    border: 1px solid #919191;
-}
-
-#contacto .contenedor-form .mitad input {
-    width: 48%;
-}
-
-#contacto .contenedor-form .input-full {
-    width: 100%;
-}
-
-#contacto .titulo-seccion {
+#contact .titulo-seccion {
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
     color: #d982c5;
-    text-decoration: underline;
-    text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 5px;
-}
+    margin-bottom: 10px;
 
-#contacto .btn-enviar {
-    display: block;
+}
+#contacto {
+    max-width: 1200px;
     margin: auto;
-    cursor: pointer;
-    transition: .5s;
-    padding: 10px 15px !important;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row; /* Layout en fila */
 }
 
-#contacto .btn-enviar:hover {
-    background-color: #deacd2;
-    color: #fff;
+.contacto-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contacto-item i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #d982c5;
+}
+
+.contacto-item p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.contacto-item a {
+    color: #d982c5;
+    text-decoration: none;
+}
+
+.contacto-item a:hover {
+    text-decoration: underline;
+}
+
+.contacto-imagen {
+    flex: 1;
+    padding: 10px;
+}
+
+.contacto-imagen img {
+    width: 70%;
+    border-radius: 20px;
+}
+@media (max-width: 768px) {
+    #contacto {
+        flex-direction: column; /* Cambiar a diseño en columna en pantallas pequeñas */
+        align-items: center; /* Alinear los elementos al centro */
+    }
+
+    .contacto-info, .contacto-imagen {
+        width: 100%; /* Tomar todo el ancho disponible */
+        text-align: left; /* Centrar el texto */
+    }
+
+    .contacto-item {
+        justify-content: left; /* Centrar los ítems de contacto */
+    }
+
+    .contacto-imagen img {
+        width: 100%; /* Asegurar que la imagen tome el 100% del ancho disponible en pantallas pequeñas */
+    }
+    .contacto-item i {
+        font-size: 18px; /* Reducir tamaño del ícono en pantallas pequeñas */
+    }
+
+    .contacto-item p, .contacto-item a {
+        font-size: 15px; /* Reducir tamaño de la fuente en pantallas pequeñas */
+    }
 }
 /* *********************/
 /* seccion F O O T E R */
