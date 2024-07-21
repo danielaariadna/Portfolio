@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 
 // Definir una ruta GET para '/Onichan'
-router.get('/Onichan', (req, res) => {
+router.get('/AriadnaMorales', (req, res) => {
     // Enviar la vista 'index' como respuesta a la solicitud
     res.render('index');
 });
