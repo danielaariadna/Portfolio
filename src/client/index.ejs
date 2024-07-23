@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>ARIADNA MORALES</title>
 </head>
 
@@ -50,7 +51,7 @@
                     <div id="container"></div>
                     <div id="container2">
                     <p class="bienvenida">¡Hello World!</p>
-                    <h2>Soy <span>Daniela Ariadna Morales</span> </h2>
+                    <h2 >Soy <span class="typed"></span> </h2>
                     <p class="descripcion">Actualmente me encuentro en la búsqueda de mi primera experiencia laboral en el mundo IT.</p>
                     <a href="#portfolio">Ver Portfolio</a>
                  </div>
@@ -61,15 +62,15 @@
 
    <!-- SECCION S O B R E M I -->
     <section id="sobremi">
-            <div class="contenedor-foto">
-                <img src="img/perfil.jpg" alt="">
+            <div class="contenedor-foto"data-aos="fade-right" >
+                <img src="img/perfil.jpg" alt="" >
             </div>
-            <div class="sobremi">
+            <div class="sobremi" >
                 <p class="titulo-seccion">SOBRE MÍ</p>
-                <h2>Hola, Soy <span>Ariadna</span> </h2>
+                <h2 data-aos="fade-left">Hola, Soy <span>Ariadna</span> </h2>
                 <h3>Estudiante de Ingeniería en Informática | Desarrollo Backend | Pentesting</h3>
                 <p>No pretendo poner la descripción más genérica y aburrida del mundo. Si pudiera describirme de forma breve, diría que:</p>
-                <ul>
+                <ul data-aos="fade-left">
                     <li>Amo la carrera que estudio, y amo que me haya dado las bases de todo lo que sé y la capacidad del autoaprendizaje.</li>
                     <li>Hace poco empecé en la ciberseguridad y el pentesting, y siento que encontré mi camino.</li>
                     <li>Di lo mejor de mí haciendo esta página porque no soy muy amiga del frontend.</li>
@@ -94,27 +95,27 @@
     <div class="skill-category">
         <h3 class="titulo-seccion">SKILLS</h3>
         <h2>Actualmente estoy enfocada en:</h2>
-        <kbd>
+        <kbd data-aos="zoom-in">
             <kbd><h1>Back-end🔥</h1></kbd>
             <br>
             <br>
             <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" title="NodeJS"/>
           </kbd>
-        <kbd>
+        <kbd data-aos="zoom-in">
             <kbd><h1>Term Script🌱</h1></kbd>
             <br>
             <br>
             <img width="50px" src="img/gnu-bash.png" title="GNU Bash" />
           </kbd>
         
-        <kbd>
+        <kbd data-aos="zoom-in">
             <kbd><h1>Pentesting🌱</h1></kbd>
             <br>
             <br>
             <img width="50px" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Python-Dark.svg" title="Python"/>
             <img width="50px" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Kali-Dark.svg"title="Kali Linux" />
         </kbd>
-         <kbd>
+         <kbd data-aos="zoom-in">
             <kbd><h1>Networks🌱</h1></kbd>
             <br>
             <br>
@@ -129,7 +130,7 @@
           <br>
         <h2>Pero también esoy familiarizada con:</h2>
 
-        <kbd>
+        <kbd data-aos="zoom-in">
             <kbd><h1>Back-end🌱</h1></kbd>
             <br>
             <br>
@@ -139,7 +140,7 @@
           </kbd>
         </kbd>
 
-        <kbd>
+        <kbd data-aos="zoom-in">
             <kbd><h1>Front-end🌱 </h1></kbd>
             <br>
             <br>
@@ -149,13 +150,13 @@
           </kbd>
         
       
-        <kbd>
+        <kbd data-aos="zoom-in">
             <kbd><h1>Mobile🌱 </h1></kbd>
           <br>
           <br>
           <img width="50px" src="https://github.com/tandpfun/skill-icons/raw/main/icons/AndroidStudio-Dark.svg" title="AndroidStudio"/>
         </kbd>
-        <kbd>
+        <kbd data-aos="zoom-in">
             <kbd><h1>Data Base🔥</h1></kbd>
             <br>
             <br>
@@ -165,7 +166,7 @@
           </kbd>
           
           <h2>Otras herramientas que utilizo:</h2>
-          <kbd>
+          <kbd data-aos="zoom-in">
             <kbd><h1>Tools</h1></kbd>
             <br>
             <br>
@@ -181,9 +182,9 @@
         <h3 class="titulo-seccion">˖⁺‧₊˚♡˚₊‧⁺˖ Mis Proyectos ˖⁺‧₊˚♡˚₊‧⁺˖</h3>
         <h1>//Haz click para más información </h1>
         <div class="fila">
-            <div class="proyecto" onclick="openModal('port')">
-                <div class="overlay"></div>
-                <img src="img/portfolio.png" alt="">
+            <div class="proyecto" onclick="openModal('port')" >
+                <div class="overlay" ></div>
+                <img src="img/portfolio.png" alt="" data-aos="zoom-in">
                 <div class="info">
                     <h4>Esta página</h4>
                     <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/NodeJS-Dark.svg" alt="Icono" class="icono">
@@ -195,7 +196,7 @@
             
             <div class="proyecto" onclick="openModal('redWan')">
                 <div class="overlay"></div>
-                <img src="img/redesWan.png" alt="">
+                <img src="img/redesWan.png" alt="" data-aos="zoom-in">
                 <div class="info">
                     <h4>Diseño de red Empresa Crediticia</h4>
                     <p>FTTH, ADSL/SDSL</p>
@@ -204,7 +205,7 @@
             </div>
             <div class="proyecto" onclick="openModal('eda')">
                 <div class="overlay"></div>
-                <img src="img/eda.png" alt="">
+                <img src="img/eda.png" alt="" data-aos="zoom-in">
                 <div class="info">
                     <h4>Costos en Estructuras</h4>
                     <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/C.svg" alt="Icono" class="icono">
@@ -212,11 +213,11 @@
             </div>
             
         </div>
-        <div class="fila">
-            <div class="proyecto" onclick="openModal('hyh')" >
+        <div class="fila"  >
+            <div class="proyecto" onclick="openModal('hyh')"  >
                 <div class="overlay"></div>
-                <img src="img/hh.png" alt="">
-                <div class="info">
+                <img src="img/hh.png" alt="" data-aos="zoom-in">
+                <div class="info" >
                     <h4>App de escritorio: Protección y Compresión de archivos</h4>
                     <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Java-Dark.svg" alt="Icono" class="icono">  
         
@@ -225,7 +226,7 @@
             
             <div class="proyecto" onclick="openModal('vet')">
                 <div class="overlay"></div>
-                <img src="img/veterinaria.png" alt="">
+                <img src="img/veterinaria.png" alt="" data-aos="zoom-in">
                 <div class="info">
                     <h4>Página web Veterinaria</h4>
                     <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/PHP-Dark.svg" alt="Icono" class="icono">
@@ -235,7 +236,7 @@
             </div>
             <div class="proyecto"  onclick="openModal('art')">
                 <div class="overlay"></div>
-                <img src="img/galeria.png" alt="">
+                <img src="img/galeria.png" alt="" data-aos="zoom-in">
                 <div class="info">
                     <h4>App Móvil Galería de Arte</h4>
                     <img src="https://github.com/tandpfun/skill-icons/raw/main/icons/AndroidStudio-Dark.svg" alt="Icono" class="icono">
@@ -281,7 +282,7 @@
                               </ul>
                         </p>
                         <div class="button-container">
-                            <a href="https://github.com/danielaariadna/HammingHuffman" target="_blank">
+                            <a href="https://github.com/danielaariadna/HammingHuffman" target="_blank" >
                                 <img width="40px" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Github-Dark.svg" alt="Google Drive">
                                 Repositorio
                             </a>
@@ -599,15 +600,15 @@
         <h3 class="titulo-seccion">Un poco de todo</h3>
         <h1>//Haz click </h1>
         
-        <div class="fila">
-            <div class="servicio" onclick="openModal('ing')">
+        <div class="fila" >
+            <div class="servicio" onclick="openModal('ing')" data-aos="zoom-in">
                 
                 <h4>INGENIERÍA EN INFORMÁTICA UNSL </h4>
                 <hr>
                 <img src="https://i.pinimg.com/564x/6d/c3/52/6dc3527fd75e885f58cc9f06debf730f.jpg"  >
             </div>
             
-            <div class="servicio" onclick="openModal('pila')" >
+            <div class="servicio" onclick="openModal('pila')" data-aos="zoom-in" >
                 
                 <h4>INTERCAMBIO VIRTUAL<br>2C 2024</h4>
                 <hr>
@@ -616,7 +617,7 @@
                 
             </div>
           
-            <div class="servicio" onclick="openModal('cyber')" >
+            <div class="servicio" onclick="openModal('cyber')"  data-aos="zoom-in">
                 
                 <h4>CIBERSEGURIDAD<br>Y PENTESTING</h4>
                 <hr>
@@ -628,7 +629,7 @@
             
         </div>
         <div class="fila">
-            <div class="servicio"   onclick="openModal('rally')">
+            <div class="servicio"   onclick="openModal('rally')"data-aos="zoom-in">
                 
                 <h4>RALLY LAT. DE INNOVACIÓN 2023</h4>
                 <hr>
@@ -636,7 +637,7 @@
               
            
             </div>
-            <div class="servicio" onclick="openModal('cacic')"  >
+            <div class="servicio" onclick="openModal('cacic')" data-aos="zoom-in" >
                 
                 <h4>VIAJES AL CACIC <br>2022-2023</h4>
                 <hr>
@@ -645,7 +646,7 @@
             
             </div>
 
-            <div class="servicio" onclick="openModal('mip')">
+            <div class="servicio" onclick="openModal('mip')" data-aos="zoom-in">
                 
                 <h4>MI (NO) <br>PRIMER EMPLEO</h4>
                 <hr>
@@ -869,7 +870,7 @@
         <h3 class="titulo-seccion">¡Contactame!</h3>
         <h1>// También acepto criticas constructivas sobre la página y mis proyectos :) </h1>
         <section id="contacto">
-            <div class="contacto-info">
+            <div class="contacto-info"  data-aos="fade-right">
                 <div class="contacto-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <p>San Luis, Argentina</p>
@@ -888,7 +889,7 @@
                 </div>
             </div>
             <div class="contacto-imagen">
-                <img src="https://i.pinimg.com/originals/59/b8/c8/59b8c8622c076c5dc7bac0dd591c712c.gif" alt="Imagen de contacto">
+                <img src="https://i.pinimg.com/originals/59/b8/c8/59b8c8622c076c5dc7bac0dd591c712c.gif" alt="Imagen de contacto"  data-aos="fade-left">
             </div>
         </section>
     </section>
@@ -905,11 +906,19 @@
 
     </footer>
     
- 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"> </script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="/animation.js"></script>
     <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+          AOS.init({
+            duration: 1200,
+          });
+        });
+      </script>
 </body>
 
 </html>

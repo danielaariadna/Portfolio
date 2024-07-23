@@ -162,6 +162,12 @@ html {
     color: #fff;
     display: none;
 }
+
+
+
+
+
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     #inicio .contenido .presentacion h2 span {
