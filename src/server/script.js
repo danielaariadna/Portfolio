@@ -1,5 +1,5 @@
 // Lista de IDs de los modales de proyectos en orden
-const projectModals = ['port', 'modal5', 'htb', 'hyh', 'vet', 'art', 'eda', 'redWan'];
+const projectModals = ['port', 'redWan','eda', 'hyh', 'vet', 'art'];
 let currentProjectIndex = 0; // Índice del modal actual de proyectos
 var typed = new Typed('.typed', {
     strings: ['Daniela Ariadna Morales.'],
