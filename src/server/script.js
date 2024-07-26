@@ -109,6 +109,7 @@ window.onclick = function(event) {
 
 // Inicializar el carrusel con la primera imagen activa al cargar el DOM
 document.addEventListener('DOMContentLoaded', function () {
+    
     let modals = document.querySelectorAll('.modal');
     modals.forEach(modal => {
         mostrarPrimeraImagen(modal.id);
