@@ -3,8 +3,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    function resize() {
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+    }
+
+    window.addEventListener('resize', resize);
+    resize(); // Ajusta el tamaño inicial
+
     sceneContainer.appendChild(renderer.domElement);
+
+    // Ajustar el estilo del canvas
+    const canvas = renderer.domElement;
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
 
     // Color de fondo
     scene.background = new THREE.Color(0x000); // Color negro
@@ -32,12 +46,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const stars = new THREE.Points(starsGeometry, starsMaterial);
     scene.add(stars);
 
- // Aumentar la intensidad de la luz puntual
-const pointLight = new THREE.PointLight(0xFFFFFF, 0.5); // Ajusta el valor según sea necesario
-scene.add(pointLight);
+    // Aumentar la intensidad de la luz puntual
+    const pointLight = new THREE.PointLight(0xFFFFFF, 0.5); // Ajusta el valor según sea necesario
+    scene.add(pointLight);
 
-// Posición de la luz puntual
-pointLight.position.set(0, 0, 0);
+    // Posición de la luz puntual
+    pointLight.position.set(0, 0, 0);
 
     camera.position.z = 60;
 
@@ -53,7 +67,3 @@ pointLight.position.set(0, 0, 0);
 
     animate();
 });
-
-
-    //const galaxyTexture = new THREE.TextureLoader().load('/img/background1.jpg');
-   // scene.background = galaxyTexture;
