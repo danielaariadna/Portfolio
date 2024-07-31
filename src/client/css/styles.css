@@ -757,7 +757,10 @@ ul {
     line-height: 1.5;
     width: 700px;
     padding: 10px;
+     height: 500px;
+     overflow-y: auto;
 }
+
 .right-align {
     display: flex;
     justify-content: flex-end;
