@@ -331,6 +331,9 @@ canvas {
         max-width: none; 
         margin-bottom: 20px;
     }
+    #sobremi .sobremi a.separado {
+        margin-left:20px; /* Ajusta este valor para separar horizontalmente */
+    }
 }
 
 
