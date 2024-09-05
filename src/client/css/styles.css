@@ -310,6 +310,7 @@ canvas {
     background-color: #1e0819;
 
 }
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     #sobremi {
