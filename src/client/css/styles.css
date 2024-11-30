@@ -196,11 +196,8 @@ canvas {
        color: #deacd2;
      
     }
-    #container2 {
-        width: 90%; /* Ajusta el ancho al 90% del ancho de la pantalla */
-        height: 600px; /* Mantén la altura fija */
-        padding: 10px; /* Ajusta el padding para pantallas pequeñas */
-      }
+
+
 
     
 }
